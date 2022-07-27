@@ -24,7 +24,11 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link
+            to="/travel-agency-page"
+            className="navbar-logo"
+            onClick={closeMobileMenu}
+          >
             ALPHHS {"  "}
             <i className="fa-solid fa-code"></i>
           </Link>
@@ -33,13 +37,17 @@ export const Navbar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/travel-agency-page/"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/services"
+                to="/travel-agency-page/services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -48,7 +56,7 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/products"
+                to="/travel-agency-page/products"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -57,7 +65,7 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/sign-up"
+                to="/travel-agency-page/sign-up"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
